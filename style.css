@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+    color: #333;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+header{
+    background-color: #333;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+
+header button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: #333;
+    font-weight: bold;
+}
+
+section{
+    padding: 20px;
+    margin: 20px auto;
+    height: 100vh;
+
+}
+
+div{
+    width: 50%;
+    
+}
+
+.eu{
+    height: 300px;
+}
+
+img{
+    height: 350px;
+}
+
+#sobre{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+h2{
+    margin-bottom: 10px;
+    font-size: 4em;
+}
+
+.projeto{
+    
+    
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+
+#projetos{
+    display: block;
+    align-items: center;
+    justify-items: center;
+
+}
+
+
+
+
+/* --------- RESPONSIVO---------- */
+
+@media(max-width: 480px){
+    #sobre{
+        display: block;
+        
+        justify-items: center;
+        
+    }
+    div{
+        width: 100%;
+         margin: 20px;
+    }
+    img{
+        margin: 20px;
+        align-items: center;
+    }
+    h2{
+        text-align: center;
+        font-size: 26px;
+    }
+    
+    #projetos{
+        display: block;
+        justify-items: center ;
+    }
+    
+}
+
+
+/* ----------MODO ESCURO---------- */
+
+.dark-theme{
+    background-color: #333;
+    color: #f5f5f5;
+}
+.dark-theme header{
+    background-color: #222;
+    
+}
+.dark-theme header button{
+    background-color: #444;
+    color: #f5f5f5;
+}
+.dark-theme .projeto{
+    background-color: #555;
+
+}
